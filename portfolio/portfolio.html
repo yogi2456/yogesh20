@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8</title>
+    <script src="https://kit.fontawesome.com/704533a44e.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        #screen {
+            width: 100%;
+            height: 6000px;
+            
+            background-color: #F5F5F5;
+            
+        }
+
+        #navbar {
+            width: 70%;
+            margin: auto;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            
+            color: black;
+            background-color: #FFFFFF;
+        }
+
+        .padding-10 {
+            padding: 10px
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        #right-navi {
+            padding: 20px;
+        }
+
+        #right-navi div {
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        #HOME {
+            width: 70%;
+            height: 600px;
+           
+            margin: auto;
+            text-align: center;
+            color: black;
+            background-color: #FFFFFF;
+            margin-top: 10px;
+        }
+
+        #HOME div h1 {
+            font-size: 54px;
+        }
+
+        #HOME div h3 {
+            font-size: 34px;
+        }
+
+        #HOME div {
+            padding-top: 150px;
+        }
+
+        #ABOUT {
+            width: 70%;
+            height: 380px;
+            box-shadow: 0px 0px 4px gray;
+            margin: auto;
+            justify-content: space-evenly;
+            padding-top: 80px;
+            background-color: #FFFFFF;
+            margin-top: 50px;
+        }
+
+        #ABOUT-left {
+            width: 45%;
+            height: 70%;
+            
+        }
+
+        #ABOUT-right {
+            width: 45%;
+            height: 70%;
+            
+        }
+
+        .w-42 {
+            width: 45%;
+        }
+
+        .fs-16 {
+            font-size: 24px;
+        }
+
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+
+        #icons {
+            display: flex;
+            
+            width: 45%;
+            height: 40px;
+            margin-top: 20px;
+            justify-content: space-around;
+            padding-top: 13px;
+            
+        }
+
+        #icons div {
+            width: 32px;
+            height: 30px;
+            border: 4px solid blue;
+            border-radius: 50%;
+            
+            padding-top: 15px;
+            padding: 10px;
+            
+            
+        }
+
+        #icons div:hover {
+            background-color: #0078ff;
+            color: white;
+            border: 4px solid rgb(197, 195, 195);
+        }
+
+        #SKILLS {
+            width: 70%;
+            margin: auto;
+            
+            margin-top: 50px;
+            margin-bottom: 50px;
+            
+            
+        }
+        #SKILLS h1 {
+            text-align: center;
+            font-size: 44px;
+            border-bottom: 5px solid #0078ff;
+            width: 10%;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        #box {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        #box> div {
+            width: 30%;
+            height: 300px;
+            justify-content: space-evenly;
+            
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+        }
+
+        #PROJECTS {
+            width: 70%;
+            height: 600px;
+            border: 5px solid blue;
+            margin: auto;
+        }
+
+        #BLOG {
+            width: 70%;
+            height: 600px;
+            border: 5px solid blue;
+            margin: auto;
+        }
+
+        #CONTACTME {
+            width: 70%;
+            height: 600px;
+            border: 5px solid blue;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div class="padding-10">
+                <h1>Sakluri Yogesh</h1>
+            </div>
+            <div id="right-navi" class="flex">
+                <div>HOME</div>
+                <div>ABOUT</div>
+                <div>SKILLS</div>
+                <div>PROJECTS</div>
+                <div>BLOG</div>
+                <div>CONTACT ME</div> 
+            </div>
+        </div>
+
+        <div id="HOME">
+            <div>
+                <h1>Hie, There!</h1>
+                <h1>I am Sakluri Yogesh</h1>
+                <h3>Full Stack Developer</h3>
+            </div>
+
+        </div>
+        <div id="ABOUT" class="flex">
+            <div id="ABOUT-left" class="flex">
+                <div class="w-42">
+                    <img  style="width: 80%; border-radius: 10px; height: 60%;" src="https://cdn1.iconfinder.com/data/icons/avatar-2-2/512/Employee-512.png"/>
+                </div>
+                <div>
+                    <p class="f-16 mb-20"><b>Name:</b> Sakluri Yogesh</p>
+                    <p class="f-16 mb-20"><b>Profile:</b> Full Stack Developer</p>
+                    <p class="f-16 mb-20"><b>Email:</b> yogeshsagaluri@gmail.com</p>
+                    <p class="mb-20"><b>Phone:</b> 9550202264</p>
+                </div>
+            </div>
+            <div id="ABOUT-right">
+                <h1>About me</h1>
+                <div style="border: 3PX Solid blue; width: 25%;"></div>
+                <p style="font-size: 18px; color: #76B3E8; margin-top: 30px;">A passionate Full Stack web Developer 🚀 having an experience of building Web applications with JavaScript / ReactJs / Node.js / MongoDB and some other libraries and frameworks</p>
+                <button style="background-color: #0078ff; color: white; width: 27%; border: none; font-size: 18px; margin-top: 20px; height: 10%;">Resume</button>
+                <div id="icons">
+                    <div style="padding-right: -2px;">
+                        <i class="fa-brands fa-twitter fa-2xl" ></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="SKILLS">
+            <div>
+                <h1>SKILLS</h1>
+            </div>
+            <div id="box">    
+                <div>
+                    <img style="height: 180px; margin-top: 20px; margin-left: 70px;" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRadXwR36KO89LJkr1vyiXckqIX4W7Lnd6uXNq-2vLmRg0G5ZC4"/>
+                    <h2 style="margin-left: 130px; margin-top: 5px;">HTML</h2>
+                </div>
+                <div>
+                    <img style="height: 180px; margin-top: 20px; margin-left: 70px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy0SCuePCw-BdmEBho_0VS6BFgWDU2waxlhsjbBMYPoc1taJXQ"/>
+                    <h2 style="margin-left: 140px; margin-top: 5px;">CSS</h2>
+                </div>
+                <div>
+                    <img style="height: 180px; margin-top: 20px; margin-left: 80px;" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFXlDFn5i0YtKEjJC-o5rnI7GVd66o5QzMuACSMyYuPM88mw1e"/>
+                    <h2 style="margin-left: 100px; margin-top: 5px;">JAVASCRIPT</h2>
+                </div>
+                <div>
+                    <img style="height: 180px; margin-top: 20px; margin-left: 50px;" src="https://t1.gstatic.com/images?q=tbn:ANd9GcTpUs-xY4IrDVqcRDzsZjrgzxBvDD04KF44uet98QkyqJi1W84F"/>
+                    <h2 style="margin-left: 120px; margin-top: 10px;">REACT</h2>
+                </div>
+                <div>
+                    <img style="height: 180px; margin-top: 20px; margin-left: 70px;" src="https://img.icons8.com/windows/250/000000/nodejs.png"/>
+                    <h2 style="margin-left: 100px; margin-top: 5px;">NODE.JS</h2>
+                </div>
+                <div>
+                    <img style="height: 180px; margin-top: 20px; margin-left: 70px;" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/160/000000/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png"/>
+                    <h2 style="margin-left: 100px; margin-top: 5px;">MONGODB</h2>
+                </div>
+            </div>
+
+        </div>
+        <div id="PROJECTS">
+
+        </div>
+        <div id="BLOG">
+
+        </div>
+        <div id="CONTACT">
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
