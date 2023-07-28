@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grandparent {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #grandparent>div {
+            width: 30%;
+            border: 2px solid blue;
+            height: 300px;
+        }
+
+        #grandparent>div:nth-child(3)>div {
+            height: 70px;
+            border: 3px solid red;
+        }
+
+        #grandparent>div:nth-child(4)>div {
+            height: 95px;
+            border: 3px solid green;
+        }
+
+        #grandparent>div:nth-child(4)>div:nth-child(2) {
+            display: none;
+        }
+
+        #grandparent>div:nth-child(4)>div:nth-child(3)>div {
+            height: 70px;
+            border: 2px solid aqua;
+        }
+
+        #grandparent>div:nth-child(4)>div {
+            display: flex;
+        }
+
+        @media screen and (max-width: 450px) {
+            #grandparent {
+                flex-direction: column;
+            }
+
+            #grandparent>div {
+                width: 100%;
+                height: 150px;
+                border: 5px solid pink;
+            }
+
+            #grandparent>div:nth-child(3) {
+                display: flex;
+                flex-direction: row;
+                height: 150px;
+            }
+
+            #grandparent>div:nth-child(3)>div:nth-child(3) {
+                display: none;
+            }
+
+            #grandparent>div:nth-child(4)>div {
+                height: 43px;
+            }
+
+            #grandparent>div:nth-child(4)>div:nth-child(2) {
+                display: block;
+            }
+
+            #grandparent>div:nth-child(4)>div:nth-child(3) {
+                flex-direction: column;
+            }
+        
+            
+        }    
+
+    </style>
+</head>
+<body>
+    <div id="grandparent">
+        <div>1 children</div>
+        <div>2 children</div>
+        <div>
+            <div>1 grand children</div>
+            <div>2 grand children</div>
+            <div>3 grand children</div>
+            <div>4 grand children</div>
+        </div>
+        <div>
+            <div>1 grand children</div>
+            <div>2 grand children</div>
+            <div>
+                <div>1 great grand children</div>
+                <div>2 great grand children</div>
+                <div>3 great grand children</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

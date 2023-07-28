@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            width: 100%;
+            height: 70px;
+            background-color: #FFFFFF;
+        }
+
+        #parent>div {
+            display: flex;
+            width: 30%;
+            height: 70px;
+            justify-content: space-around;
+            
+        }
+
+        #bars {
+            display: none;
+        }
+
+        #disney {
+            margin-top: -15px;
+            
+        }
+
+        #navbar {
+            display: flex;
+            font-size: 14px;
+        }
+
+        #navbar>div {
+            margin-left: 20px;
+            margin-top: 28px;
+        }
+
+        #disneyimage {
+            width: 150%;
+            height: 120%;
+        }
+
+        #image {
+            width: 100%;
+            height: 200px;
+        }
+
+        @media screen and (max-width: 450px) {
+
+            #parent {
+                width: 100%;
+                height: 70px;
+                background-color: #FFFFFF;
+            }
+
+            #parent>div {
+                width: 170%;
+                height: 70px;
+                
+            }
+            #navbar {
+                display: none;
+            }
+
+            #bars {
+                display: block;
+            }
+
+            #bars {
+                margin-top: 23px;
+                margin-right: 50px;
+                font-size: 30px;   
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div>
+            <div id="bars">
+                bars
+            </div>
+            <div id="disney">
+                <img id="disneyimage" src="data:image/png;base64,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"/>
+            </div>
+            <div id="navbar">
+                <div><b>SHOP</b></div>
+                <div><b>PARKS</b></div>
+                <div><b>WHAT'S NEW</b></div>
+            </div>
+        </div>
+    </div>    
+
+        <div id="image">
+            <img src="https://birthdaybook.disney.in/assets/res/layout/img/landing-page-banner-new.png"/>
+        </div>
+</body>
+</html>
