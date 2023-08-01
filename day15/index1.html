@@ -14,7 +14,7 @@
         #screen {
             width: 100%;
             height: 2000px;
-            border: 5px solid red;
+            /* border: 5px solid red; */
             background-color: #000000;
         }
 
@@ -153,23 +153,18 @@
         #image1 {
             width: 100%;
             height: 550px;
-            
-        }
-
-        #image2 {
-            width: 100%;
-            height: 550px;
-            
+            display: flex;
+            justify-content: space-between;
         }
 
         #imagetag {
-            width: 100%;
+            width: 48%;
             height: 100%;
             padding-bottom: 30px;
         }
 
         #imagetag1 {
-            width: 100%;
+            width: 48%;
             height: 100%;
         }
 
@@ -215,7 +210,8 @@
             }
 
             #home {
-                width: 100%;
+                width: 60%;
+                margin: auto;
                 padding-top: 150px;
             }
 
@@ -223,24 +219,24 @@
                 width: 17%;
                 height: 17%;
                 padding-left: 0;
-                margin-left: 270px;
+                margin-left: 41%;
             }
 
             #font {
                 padding-left: 0;
-                margin-left: 200px;
+                margin-left: 18%;
             }
 
             #paragraph {
                 padding-left: 0;
-                margin-left: 55px;
+                margin-left: 10%;
                 font-size: 20px;
             }
 
             #playback {
                 padding-left: 0;
-                margin-left: 250px;
-                width: 25%;
+                margin-left: 37%;
+                width: 28%;
                 height: 40px;
             }
 
@@ -257,18 +253,89 @@
 
             #image1 {
                 padding-top: 50px;
-                width: 80%;
-                margin: auto;
                 height: 400px;
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (min-width: 661px) and (max-width: 960px) {
+            #logo > p:nth-child(2) {
+                display: block;
             }
 
-            #image2 {
-                padding-top: 50px;
-                width: 80%;
-                margin: auto;
-                height: 400px;
+            #logo > p:nth-child(1) {
+                display: none;
             }
 
+            #navigation {
+                display: none;
+            }
+
+            #socialnetworks {
+                display: none;
+            }
+
+            #screen {
+                width: 100%;
+                border: 1px solid white;
+            }
+
+            #navbar {
+                justify-content: space-between;
+            }
+
+            #logo {
+                margin-left: 4%;
+            }
+
+            #bars {
+                display: block;
+                padding-top: 37px;
+                margin-right: 4%;
+                font-weight: lighter;
+            }
+
+            #home {
+                width: 60%;
+                margin: auto;
+                border: 1px solid white;
+                padding-top: 25%;
+            }
+
+            #image {
+                width: 23%;
+                height: 23%;
+                padding-left: 0;
+                margin-left: 39%;
+            }
+
+            #font {
+                padding-left: 0;
+                margin-left: 27%;
+            }
+
+            #paragraph {
+                padding-left: 0;
+                margin-left: 6%;
+            }
+
+            #playback {
+                margin-left: 39%;
+            }
+
+            #home1 {
+                flex-direction: column;
+                width: 100%;
+                margin-left: 25px;
+            }
+
+            #dolor {
+                margin-top: 0;
+            }
+
+            #playback {
+                width: 15%;
+            }
             
         }
     </style>
@@ -293,7 +360,7 @@
                 <div><i class="fa-brands fa-instagram fa-l"></i></div>
             </div>
             <div id="bars">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars fa-2xl"></i>
             </div>
         </div>
 
@@ -319,7 +386,7 @@
             <div id="logic">
                 <p id="techno">TECHNOLOGIES</p>
                 <h3 id="most">MOST POPULAR </br> ARTICLES</h3>
-                <p id="dolor">Dolor sit amet, consectetur adipisicing elit.</br> Aliquid autem beatae consectetur cumque </br> dolores dolorum enim inventore iure minus </br> nostrum nulla numquam quam quia quod, </br> reprehenderit.</p>
+                <p id="dolor">Dolor sit amet, consectetur adipisicing elit. Aliquid autem beatae consectetur cumque  dolores dolorum enim inventore iure minus nostrum nulla numquam quam quia quod, reprehenderit.</p>
                 <div id="playback1">
                     <div id="play1">
                         <div>Read more</div>
@@ -330,13 +397,11 @@
             <div>
                 <div id="image1">
                     <img id="imagetag" src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg"/>
-                </div>
-            </div>
-            <div>
-                <div id="image2">
                     <img id="imagetag1" src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg"/>
                 </div>
             </div>
+                
+        
         </div>
 
     </div>

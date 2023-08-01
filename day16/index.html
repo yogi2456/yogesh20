@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/704533a44e.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Space Grotesk;
+        }
+
+        #screen {
+            width: 100%;
+            height: 2000px;
+            background-color: black;
+            color: white;
+        }
+
+        #navbar {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #bars {
+            display: none;
+        }
+
+
+        #navigations {
+            width: 45%;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+        }
+
+        #icons {
+            width: 30%;
+            display: flex;
+            justify-content: end;
+            padding-top: 30px;
+            padding-right: 30px;
+        }
+
+        #icons > div {
+            margin-left: 25px;
+        }
+
+        #head {
+            width: 35%;
+            padding-top: 30px;
+            padding-left: 30px;
+        }
+
+        #navbar >div:nth-child(1) > h3:nth-child(2) {
+            display: none;
+        }
+
+        #navbar > div:nth-child(1) > h3:nth-child(3) {
+            display: none;
+        }
+
+        #body {
+            width: 100%;
+            text-align: center;
+            padding-top: 200px;
+        }
+
+        #body > :nth-child(1) {
+            width: 8%;
+            height: 8%;
+        }
+
+        #body > :nth-child(2) {
+            font-size: 70px;
+            font-weight: lighter;
+            letter-spacing: 3px;
+            padding-top: 30px;
+        }
+
+        #body > :nth-child(3) {
+            padding-top: 10px;
+            line-height: -10px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        #body > button {
+            margin-top: 50px;
+            background-color: #D8D7D7;
+            width: 10%;
+            height: 40px;
+            border-radius: 30px;
+            border: none;
+        }
+
+        #body > button >i {
+            background-color: #D8D7D7;
+            margin-left: 10px;
+        }
+
+        @media screen and (min-width:481px) and (max-width: 768px) {
+            #navigations {
+                display: none;
+            }
+
+            #icons {
+                display: none;
+            }
+
+            #head > h3:nth-child(1) {
+                display: none;
+            }
+
+            #navbar > div:nth-child(1) > h3:nth-child(3) {
+                display: none;
+            }
+
+            #navbar >div:nth-child(1) >h3:nth-child(2) {
+                display: block;
+            }
+            
+
+            #navbar {
+                color: white;
+                width: 100%;
+                height: 80px;
+                justify-content: space-between;
+            }
+
+            #bars {
+                display: block;
+                padding-right: 30px;
+                padding-top: 33px;
+            }
+
+            #body > :nth-child(1) {
+                width: 15%;
+                height: 15%;
+            }
+
+            #body > button {
+                margin-top: 50px;
+                background-color: #D8D7D7;
+                width: 20%;
+                height: 40px;
+                border-radius: 30px;
+                border: none;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #navbar > div:nth-child(1) > h3:nth-child(1) {
+                display: none;
+            }
+
+            #navbar > div:nth-child(1) > h3:nth-child(2) {
+                display: none;
+            }
+
+            #navbar > div:nth-child(1) > h3:nth-child(3) {
+                display: block;
+            }
+
+            #navigations {
+                display: none;
+            }
+
+            #icons {
+                display: none;
+            }
+
+            #bars {
+                display: block;
+                padding-top: 33px;
+                padding-right: 30px;
+            }
+
+            #navbar {
+                justify-content: space-between;
+            }
+
+            #body :nth-child(1) {
+                width: 25%;
+                height: 25%;
+            }
+
+            #body > button {
+                width: 28%;
+                padding-left: 18px;
+            }
+
+            #body > button >i {
+                padding-right: 12px;
+            }
+
+            
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div id="head">
+                <h3>Laptop</h3>
+                <h3>Tab</h3>
+                <h3>Phone</h3>
+            </div>
+            <div id="navigations">
+                <div>Home</div>
+                <div>Blog</div>
+                <div>Articles</div>
+                <div>About Us</div>
+                <div>FAQ</div>
+            </div>
+            <div id="icons">
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>
+            </div>
+            <div id="bars"><i class="fa-solid fa-bars fa-xl"></i></div>
+        </div>
+
+        <div id="body">
+            <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/logo.png"/>
+            <h1>Tech Blog</h1>
+            <p>Accusamus ea excepturi hic impedit iste neque soluta, sunt tempore </br> voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button>Read more <i class="fa-solid fa-play"></i></button>
+        </div>
+    </div>
+</body>
+</html>
