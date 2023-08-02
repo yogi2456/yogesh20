@@ -4,338 +4,392 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/704533a44e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/704533a44e.js"; crossorigin="anonymous"></script>
     <style>
         * {
             margin: 0;
             padding: 0;
+            font-family: Space Grotesk;
         }
 
         #screen {
             width: 100%;
-            height: 2000px;
-            border: 5px solid red;
-            background-color: #000000;
+            height: 3000px;
+            background-color: black;
+            color: white;
         }
 
         #navbar {
-            display: flex;
-            justify-content: space-around;
             width: 100%;
             height: 80px;
-            color: white;
-            /* border: 1px solid white; */
+            display: flex;
+            justify-content: space-around;
         }
 
         #bars {
             display: none;
         }
 
-        #logo {
-            width: 23%;
-            /* border: 1px solid blue; */
-            padding-top: 37px;
+
+        #navigations {
+            width: 45%;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
         }
 
-        #logo > p:nth-child(2) {
+        #icons {
+            width: 30%;
+            display: flex;
+            justify-content: end;
+            padding-top: 30px;
+            padding-right: 30px;
+        }
+
+        #icons > div {
+            margin-left: 25px;
+        }
+
+        #head {
+            width: 35%;
+            padding-top: 30px;
+            padding-left: 30px;
+        }
+
+        #navbar >div:nth-child(1) > h3:nth-child(2) {
             display: none;
         }
 
-        #navigation {
-            display: flex;
-            justify-content: space-between;
-            width: 30%;
-            /* border: 1px solid blue; */
-            padding-top: 37px;
-        }
-
-        #socialnetworks {
-            display: flex;
-            width: 28%;
-            /* border: 1px solid blue; */
-            padding-top: 37px;
-            justify-content: end;
-            
-        }
-
-        #socialnetworks > div {
-            margin-left: 20px;
-
-        }
-
-        #home {
+        #body {
+            width: 100%;
+            text-align: center;
             padding-top: 200px;
         }
 
-        #image {
+        #body > img {
             width: 8%;
-            height: 10%;
-            padding-left: 690px;
+            height: 8%;
         }
 
-        #font {
-            font-size: 65px;
-            margin-top: 30px;
-            padding-left: 640px;
-            color: white;
+        #body > h1 {
+            font-size: 70px;
+            font-weight: lighter;
+            letter-spacing: 3px;
+            padding-top: 30px;
         }
 
-        #paragraph {
-            margin-top: 20px;
-            line-height: 25px;
+        #body > p {
+            padding-top: 10px;
+            line-height: -10px;
             font-size: 18px;
-            padding-left: 540px;
-            color: white;
+            font-weight: normal;
         }
 
-        #playback {
+        #body > button {
+            margin-top: 50px;
+            background-color: #D8D7D7;
             width: 10%;
             height: 40px;
-            /* border: 1px solid white; */
-            margin-top: 60px;
             border-radius: 30px;
-            background-color: #f2f2f2;
-            margin-left: 700px;
+            border: none;
         }
 
-        #play {
-            display: flex;
-            justify-content: space-evenly;
-            padding-top: 10px;
-        }
-
-        #home1 {
-            color: white;
-            margin-top: 260px;
+        #body > button >i {
+            background-color: #D8D7D7;
             margin-left: 10px;
+        }
+
+        /* ..................................................content laptop................................................
+         */
+
+        #content {
+            width: 90%;
+            margin: auto;
+            height: 500px;
+            /* border: 1px solid red; */
+            margin-top: 200px;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
+        }
+        #content >div:nth-child(1) {
+            width: 25%;
+            height: 500px;
+            /* border: 1px solid blue; */
+        }
+        #content >div:nth-child(2) {
+            width:68%;
+            height: 500px;
+            /* border: 1px solid white; */
+            display: flex;
+            justify-content: space-between;
         }
 
-        #techno {
-            font-size: 20px;
-            letter-spacing: 1px;
-        }
+        #content >div:nth-child(2) >div:nth-child(1) {
+            width: 47%;
+            height:100%;  
+            background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+            background-size: cover;
 
-        #most {
-            margin-top: 10px;
-            font-size: 30px;
-            line-height: 50px;
-            letter-spacing: 3px;
         }
-
-        #dolor {
-            margin-top: 150px;
+        #content >div:nth-child(2) >div:nth-child(2) {
+            width: 47%;
+            height:100%;
+            background-size: cover;
+            background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+        }
+        #content > div:nth-child(1) > :nth-child(1) {
+            padding-top: 5px;
             font-size: 18px;
-            line-height: -20px;
-            word-spacing: 5px;
-            margin-right: 5px;
-        }
 
-        #playback1 {
-            width: 30%;
+        }
+        #content > div:nth-child(1) > :nth-child(2) {
+            padding-top: 20px;
+            font-size: 40px;
+            font-weight: lighter;
+        }
+        #content > div:nth-child(1) > :nth-child(3) {
+            padding-top : 100px;
+            font-size: 17px;
+            line-height: -10px;
+            font-weight: lighter;
+        }
+        #content > div:nth-child(1) > :nth-child(4) {
+            margin-top: 50px;
+            background-color: #D8D7D7;
+            width: 40%;
             height: 40px;
-            margin-top: 70px;
-            background-color: #f2f2f2;
             border-radius: 30px;
-            color: black;
-        }
+            border: none;
 
-        #play1 {
-            display: flex;
-            justify-content: space-evenly;
-            padding-top: 10px;
         }
-
-        #image1 {
-            width: 100%;
-            height: 550px;
-            
-        }
-
-        #image2 {
-            width: 100%;
-            height: 550px;
-            
-        }
-
-        #imagetag {
-            width: 100%;
-            height: 100%;
-            padding-bottom: 30px;
-        }
-
-        #imagetag1 {
-            width: 100%;
-            height: 100%;
+        #content > div:nth-child(1) > :nth-child(4) > i {
+            background-color: #D8D7D7;
+            margin-left: 10px;
         }
 
 
-        @media screen and (max-width: 660px) {
-            #logo >p:nth-child(1) {
+        
+
+
+
+        @media screen and (min-width:481px) and (max-width: 768px) {
+            #navigations {
                 display: none;
             }
 
-            #logo > p:nth-child(2) {
+            #icons {
+                display: none;
+            }
+
+            #head > h3:nth-child(1) {
+                display: none;
+            }
+
+            #navbar > div:nth-child(1) > h3:nth-child(1) {
+                display: none;
+            }
+
+            #navbar >div:nth-child(1) >h3:nth-child(2) {
+                display: block;
+            }
+            
+
+            #navbar {
+                color: white;
+                width: 100%;
+                height: 80px;
+                justify-content: space-between;
+            }
+
+            #bars {
+                display: block;
+                padding-right: 30px;
+                padding-top: 33px;
+            }
+
+            #body > :nth-child(1) {
+                width: 15%;
+                height: 15%;
+            }
+
+            #body > button {
+                margin-top: 50px;
+                background-color: #D8D7D7;
+                width: 20%;
+                height: 40px;
+                border-radius: 30px;
+                border: none;
+            }
+
+            /* ....................................content tab.................................... */
+
+            #content {
+                flex-direction: column;
+                width: 90%;
+                margin: auto;
+                height: 750px;
+                
+            }
+            #content > div:nth-child(1) {
+                width: 100%;
+                margin: auto;
+                
+            }
+            #content > div:nth-child(1) > :nth-child(3) {
+                padding-top: 0;
+                line-height: -15px;
+                font-weight: lighter;
+                font-size: 12x;
+   
+            }
+            #content > div:nth-child(1)> :nth-child(4) {
+                width: 20%;
+            }
+            #content > div:nth-child(2) {
+                width:100%;
+                margin: auto;
+                height: 350px;
+                margin-top: -250px;
+                
+
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+            #navbar > div:nth-child(1) > h3:nth-child(1) {
+                display: none;
+            }
+
+            #navbar > div:nth-child(1) > h3:nth-child(2) {
                 display: block;
             }
 
-            #navigation {
+            #navigations {
                 display: none;
             }
 
-            #socialnetworks {
+            #icons {
                 display: none;
             }
 
             #bars {
                 display: block;
-                padding-top: 37px;
-            }
-
-            #screen {
-                width: 100%;
-                height: 2500px;
-                border: 5px solid blue;
+                padding-top: 33px;
+                padding-right: 30px;
             }
 
             #navbar {
                 justify-content: space-between;
             }
 
-            #logo {
-                margin-left: 15px;
-            }
-
-            #bars {
-                margin-right: 15px;
-            }
-
-            #home {
-                width: 100%;
-                padding-top: 150px;
-            }
-
-            #image {
-                width: 17%;
-                height: 17%;
-                padding-left: 0;
-                margin-left: 270px;
-            }
-
-            #font {
-                padding-left: 0;
-                margin-left: 200px;
-            }
-
-            #paragraph {
-                padding-left: 0;
-                margin-left: 55px;
-                font-size: 20px;
-            }
-
-            #playback {
-                padding-left: 0;
-                margin-left: 250px;
+            #body :nth-child(1) {
                 width: 25%;
-                height: 40px;
+                height: 25%;
             }
 
-            #home1 {
+            #body > button {
+                width: 28%;
+                padding-left: 18px;
+            }
+
+            #body > button >i {
+                padding-right: 12px;
+            }
+
+            /* .......................................content mobile......................................... */
+
+            #content {
                 flex-direction: column;
                 width: 100%;
-                margin-left: 25px;
-                margin-top: 200px;
+               
+                height: 1000px;
+              
             }
-
-            #dolor {
-                margin-top: 0;
-            }
-
-            #image1 {
-                padding-top: 50px;
-                width: 80%;
+            #content > div:nth-child(1) {
+                width: 90%;
                 margin: auto;
-                height: 400px;
             }
-
-            #image2 {
-                padding-top: 50px;
-                width: 80%;
+            #content > div:nth-child(1) > :nth-child(3) {
+                padding-top: 0;
+ 
+            }
+            #content > div:nth-child(1) > :nth-child(4) {
+                width: 25%;
+            }
+            #content > div:nth-child(2) {
+                width: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            #content > div:nth-child(2) > :nth-child(1) {
+                width: 98%;
                 margin: auto;
+               
                 height: 400px;
+                margin-top: -100px;
             }
+            #content > div:nth-child(2) > :nth-child(2) {
+                width: 98%;
+                margin: auto;
+                
+                height: 400px;
+                margin-top: 50px;
+            }
+            
+            
 
             
         }
+
+        
+
+
     </style>
 </head>
 <body>
     <div id="screen">
         <div id="navbar">
-            <div id="logo">
-                <p>Tech Blog</p>
-                <p>BoldM5</p>
+            <div id="head">
+                <h3>Tech Blog</h3>
+                <h3>Bmold5</h3>
             </div>
-            <div id="navigation">
+            <div id="navigations">
                 <div>Home</div>
                 <div>Blog</div>
                 <div>Articles</div>
                 <div>About Us</div>
                 <div>FAQ</div>
             </div>
-            <div id="socialnetworks">
-                <div><i class="fa-brands fa-facebook-f fa-l"></i></div>
-                <div><i class="fa-brands fa-twitter fa-l"></i></div>
-                <div><i class="fa-brands fa-instagram fa-l"></i></div>
+            <div id="icons">
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>
             </div>
-            <div id="bars">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+            <div id="bars"><i class="fa-solid fa-bars fa-xl"></i></div>
         </div>
 
-        <div id="home">
-            <div>
-                <img id="image" src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/logo.png"/>
-            </div>
-            <div id="font">Tech Blog</div>
-            <div id="paragraph">
-                <p>Accusamus ea excepturi hic impedit iste neque soluta, sunt tempore </br>
-                    voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-            </div>
-            <div id="playback">
-                <div id="play">
-                    <div>Read more</div>
-                    <div><i class="fa-solid fa-play"></i></div>
-                </div>
-            </div>
+        <div id="body">
+            <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/logo.png"/>
+            <h1>Tech Blog</h1>
+            <p>Accusamus ea excepturi hic impedit iste neque soluta, sunt tempore </br> voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button>Read more <i class="fa-solid fa-play"></i></button>
         </div>
 
-        <div id="home1">
-            <div id="logic">
-                <p id="techno">TECHNOLOGIES</p>
-                <h3 id="most">MOST POPULAR </br> ARTICLES</h3>
-                <p id="dolor">Dolor sit amet, consectetur adipisicing elit.</br> Aliquid autem beatae consectetur cumque </br> dolores dolorum enim inventore iure minus </br> nostrum nulla numquam quam quia quod, </br> reprehenderit.</p>
-                <div id="playback1">
-                    <div id="play1">
-                        <div>Read more</div>
-                        <div><i class="fa-solid fa-play"></i></div>
-                    </div>
-                </div>
+
+        <div id="content">
+            <div>
+                <p>TECHNOLOGIES</p>
+                <h2>Most popular </br>
+                    articles</h2>
+                <p>Dolor sit amet, consectetur adipisicing elit. Aliquid autem beatae consectetur cumque dolores dolorum enim inventore iure minus nostrum nulla numquam quam quia quod, reprehenderit.</p>
+                <button>Read more <i class="fa-solid fa-play"></i></button>
             </div>
             <div>
-                <div id="image1">
-                    <img id="imagetag" src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg"/>
-                </div>
-            </div>
-            <div>
-                <div id="image2">
-                    <img id="imagetag1" src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg"/>
-                </div>
+                <div>left</div>
+                <div>right</div>
             </div>
         </div>
-
     </div>
 </body>
 </html>
