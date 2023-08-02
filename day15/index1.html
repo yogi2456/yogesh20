@@ -168,6 +168,62 @@
             background-size: cover;
         }
 
+        #left {
+            display: none;
+            height: 80%;
+            width: 85%;
+            border: 1px solid blue;
+            margin: 10% 7.5% 8% 7.5%;
+            background-color: #C9C9C9;
+        }
+
+        #left > div:nth-child(1) {
+            width: 85%;
+            height: 60%;
+            margin: 20% 7.5% 10% 7.5%;
+            border: 1px solid red;
+            
+        }
+
+        #left > div:nth-child(1) > div {
+            background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image2.jpg);
+            background-size: cover;
+        }
+
+        #left button {
+            width: 40%;
+            height: 40px;
+            background-color: #C9C9C9;
+            border-radius: 30px;
+            border: none;
+            color: black;
+            margin-left: 30%;
+            margin-top: 30%;
+        }
+
+        #left  i {
+            margin-left: 10px;
+            background-color: #C9C9C9;
+        }
+
+        #left > div:nth-child(2) > p {
+            margin-left: 7.5%;
+            color: #000000;
+        }
+
+        #left > div:nth-child(2) > p:nth-child(1) {
+            margin-top: -15px;
+        }
+
+        #left > div:nth-child(2) > p:nth-child(2) {
+            margin-top: 8px;
+        }
+
+        #leftparent :hover>div:nth-child(1) {
+            border: 5px solid green;
+            display: block;
+        }
+
 
         @media screen and (max-width: 660px) {
             #logo >p:nth-child(1) {
@@ -392,7 +448,19 @@
                 <button>Read more <i class="fa-solid fa-play"></i> </button>
             </div>
             <div>
-                <div>left</div>
+                <div id="leftparent">
+                    <div id="left">
+                        <div>
+                            <div style="width: 100%; height: 100%;">
+                                <button>See Card <i class="fa-solid fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Mobile Design</p>
+                            <p>$100.00</p>
+                        </div>
+                    </div>
+                </div>
                 <div>right</div>
             </div>
         </div>
