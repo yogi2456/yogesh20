@@ -169,17 +169,17 @@
 
         #left {
             display: none;
-            height: 80%;
+            height: 400px;
             width: 85%;
-            /* border: 1px solid blue; */
-            margin: 10% 7.5% 8% 7.5%;
-            background-color: #C9C9C9;
+            border: 1px solid #c3bebe;
+            margin:10% 7.5% 30% 7.5%;
+            background-color: #c3bebe;
         }
 
         #left > div:nth-child(1) {
             width: 85%;
             height: 60%;
-            margin: 20% 7.5% 10% 7.5%;
+            margin: 20% 7.5% 20% 7.5%;
             /* border: 1px solid red; */
             
         }
@@ -211,15 +211,15 @@
         }
 
         #left > div:nth-child(2) > p:nth-child(1) {
-            margin-top: -15px;
+            margin-top: -50px;
         }
 
         #left > div:nth-child(2) > p:nth-child(2) {
             margin-top: 8px;
         }
 
-        #leftparent:hover > left > div {
-            border: 5px solid green;
+        #leftparent:hover>div:nth-child(1) {
+            /* border: 1px solid green; */
             display: block;
         }
 
@@ -227,9 +227,9 @@
             display: none;
             width: 85%;
             height: 400px;
-            /* border: 1px solid blue; */
-            margin: 10% 7.5% 10% 7.5%;
-            background-color: #C9C9C9;
+            border: 1px solid #c3bebe;
+            margin: 10% 7.5% 30% 7.5%;
+            background-color: #c3bebe;
         }
 
         #right > div:nth-child(1) {
@@ -274,8 +274,8 @@
             margin-top: 8px;
         }
 
-        #rightparent:hover> right > div {
-            /* border: 5px solid green; */
+        #rightparent:hover>div:nth-child(1) {
+            /* border: 1px solid green; */
             display: block;
         }
 
@@ -370,7 +370,7 @@
             margin-top: 120px;
         }
 
-        #ourwebsite:hover > div:nth-child(2) > button {
+        #ourwebsite >#one:hover > button {
             display: block;
         }
 
@@ -393,9 +393,10 @@
             margin-top: 120px;
         }
 
-        #ourwebsite:hover > div:nth-child(3) > button {
+        #ourwebsite >#two:hover > button {
             display: block;
         }
+
 
         #ourwebsite > div:nth-child(4) {
             width: 15%;
@@ -416,9 +417,11 @@
             margin-top: 120px;
         }
 
-        #ourwebsite:hover >div:nth-child(4) > button {
+        #ourwebsite >#three:hover > button {
             display: block;
         }
+
+
 
         #ourwebsite > div:nth-child(5) {
             width: 15%;
@@ -439,9 +442,9 @@
             margin-top: 120px;
         }
 
-        /* #ourwebsite:hover > div:nth-child(5) > button {
+        #ourwebsite >#four:hover > button {
             display: block;
-        } */
+        }
 
         #ourwebsite > div:nth-child(6) {
             width: 15%;
@@ -462,9 +465,9 @@
             margin-top: 120px;
         }
 
-        /* #ourwebsite:hover > div:nth-child(6) > button {
+        #ourwebsite >#five:hover > button {
             display: block;
-        } */
+        }
 
         #popular {
             width: 100%;
@@ -655,12 +658,18 @@
             /* border: 1px solid blue; */
             margin-top: 80px;
             color: white;
-            background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/background1.jpg);
-            background-size: cover;
-            background-blend-mode: multiply;
         }
 
-        #easy > div  {
+        #easy > div:nth-child(1) {
+            width: 100%;
+            height: 650px;
+            /* border: 5px solid blue; */
+            background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/background1.jpg);
+            background-size: cover;
+            
+        }
+
+        #easy > div:nth-child(1) > div:nth-child(1)  {
             width: 34%;
             height: 650px;
             /* border: 1px solid red; */
@@ -669,14 +678,15 @@
             padding-top: 5px;
         }
 
-        #easy > div > h1 {
+        #easy > div:nth-child(1) > div:nth-child(1) > h1 {
             font-size: 47px;
             font-weight: lighter;
             margin-top: 80px;
             letter-spacing: 1px;
+            color: whitesmoke;
         }
 
-        #easy > div > p {
+        #easy > div:nth-child(1) > div:nth-child(1) > p {
             font-size: 20px;
             font-weight: lighter;
             margin-top: 40px;
@@ -2011,7 +2021,6 @@
                         </div>
                     </div>
                 </div>
-                <div>
                     <div id="rightparent">
                         <div id="right">
                             <div>
@@ -2025,7 +2034,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
 
@@ -2042,11 +2050,11 @@
                 <p>Follow Us</p>
                 <p>tech@blog.com</p>
             </div>
-            <div><button>See Card </button></div>
-            <div><button>See Card </button></div>
-            <div><button>See Card </button></div>
-            <div><button>See Card </button></div>
-            <div><button>See Card </button></div>
+            <div id="one"><button>See Card </button></div>
+            <div id="two"><button>See Card </button></div>
+            <div id="three"><button>See Card </button></div>
+            <div id="four"><button>See Card </button></div>
+            <div id="five"><button>See Card </button></div>
         </div>
 
 
@@ -2101,8 +2109,10 @@
 
         <div id="easy">
             <div>
-                <h1>Easy to use for everyone</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad autem distinctio, ea eum harum id illo itaque laborum maxime natus quaerat quia quo reiciendis.</p>
+                <div>
+                    <h1>Easy to use for everyone</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad autem distinctio, ea eum harum id illo itaque laborum maxime natus quaerat quia quo reiciendis.</p>
+            </div>
             </div>
         </div>
 
