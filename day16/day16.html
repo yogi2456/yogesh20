@@ -665,14 +665,26 @@
         }
 
         #easy > div:nth-child(1) {
-            width: 100%;
-            height: 650px;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
             /* border: 5px solid blue; */
             background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/background1.jpg);
-            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1043.2px;
+            height: 650.8px;
+            overflow: hidden;
+            pointer-events: none;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            will-change: transform, opacity;
+            margin-top: 6.9px;
+            transform: translate3d(0px, -31.675px, 0px);
         }
 
-        #easy > div:nth-child(1) > div:nth-child(1)  {
+        #easy1 {
             width: 34%;
             height: 650px;
             /* border: 1px solid red; */
@@ -680,17 +692,17 @@
             color: black;
             padding-top: 5px;
             opacity: 1;
+            color: blue;
         }
 
-        #easy > div:nth-child(1) > div:nth-child(1) > h1 {
+        #easy1 > h1 {
             font-size: 47px;
             font-weight: lighter;
             margin-top: 80px;
             letter-spacing: 1px;
-            color: whitesmoke;
         }
 
-        #easy > div:nth-child(1) > div:nth-child(1) > p {
+        #easy1 > p {
             font-size: 20px;
             font-weight: lighter;
             margin-top: 40px;
@@ -2153,9 +2165,9 @@
         </div>
 
 
-        <div id="easy">
+        <div id="easy" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -100;">
             <div>
-                <div>
+                <div id="easy1">
                     <h1>Easy to use for everyone</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad autem distinctio, ea eum harum id illo itaque laborum maxime natus quaerat quia quo reiciendis.</p>
             </div>
@@ -2257,4 +2269,4 @@
         </div>
     </div>
 </body>
-</html>            
+</html>
