@@ -41,13 +41,14 @@
 var myName = "yogesh";
 var mySurname = "sakluri";
 var myAge = "24";
-var Saturday = "saturday"
-var Saturday = "True"
+var karan = "saturday"
+var yogesh = "True"
 
 console.log(myName)
 console.log(mySurname)
 console.log(myAge)
-console.log(Saturady)
+console.log(karan)
+console.log(yogesh)
 
 var num1 = 256;
 var num2 = 354;
@@ -74,8 +75,8 @@ console.log(myage, typeof (myage))
 var yogesh = true;
 console.log(yogesh, typeof (yogesh))
 
-var yogesh ;
-console.log(yogesh, typeof(yogesh))
+var mouni ;
+console.log(mouni, typeof(mouni))
 
  
 
