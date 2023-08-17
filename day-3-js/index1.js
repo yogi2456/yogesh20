@@ -1,4 +1,6 @@
+// for (starting; ending; sequence) {
 
+//} 
 
 
 
@@ -76,3 +78,24 @@
 
 
 // Q. find the factorial... 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 * 11 * 12 
+
+var number = 3;
+var result = 1;
+
+for (var i = 2; i <= number; i++) {
+    result = result * i;
+}
+
+console.log(result);
+
+var number = 5;
+var result ;
+
+for (var i = 1; i <= number; i++) {
+    if(result == undefined) {
+        result = i;
+    } else {
+        result = result * i;
+    }
+}
+console.log(result)
