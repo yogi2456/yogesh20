@@ -60,3 +60,19 @@
 
 // console.log(oddcount, "total odd number")
 // console.log(evencount, "total even number")
+
+
+// Q. find out addition of first natural numbers who are even....
+
+// var result = 0;
+
+// for (var i = 1; i <= 100; i++) {
+//     if (i % 2 == 0) {
+//         result = result + i;
+//     }
+// }
+
+// console.log(result);
+
+
+// Q. find the factorial... 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 * 11 * 12 
