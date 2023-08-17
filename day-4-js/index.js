@@ -21,27 +21,27 @@ console.log(myname, "final log")
 //var is assign and declare both are possible//
 
 
-let mysurname = "sakluri";
-console.log(mysurname,)
-mysurname = 'sakluri yogesh';
-console.log(mysurname,)       //assign is possible//
-let mysurname = "s.yogesh";
-console.log(mysurname)           //redeclare is not possible//
+// let mysurname = "sakluri";
+// console.log(mysurname,)
+// mysurname = 'sakluri yogesh';
+// console.log(mysurname,)       //assign is possible//
+// let mysurname = "s.yogesh";
+// console.log(mysurname)           //redeclare is not possible//
 
 //let is assign is possible and redeclare is not possible//
 
 
-const myage = "65";
-console.log(myage)
-myage = "56";
-console.log(myage)         //assign is not possible//
-const myage = "54";
-console.log(myage)         //redeclare is not possible//
+// const myage = "65";
+// console.log(myage)
+// myage = "56";
+// console.log(myage)         //assign is not possible//
+// const myage = "54";
+// console.log(myage)         //redeclare is not possible//
 
 //const is assign and redeclare both are not possible//
 
 
-Array []//
+// Array []
 
 var name = ["yogesh, karan, anuj, rahul"];
 
