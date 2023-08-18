@@ -4,31 +4,31 @@
 
 
 
-// for (var i=100; i>=50; i--) {
-//     console.log(i)
-// }
+for (var i=100; i>=50; i--) {
+    console.log(i)
+}
 
-// for (var i=100; i>=50; i--) {
-//     console.log(i)
-//     if (i == 80) {
-//         console.log("we got 80.")
-//         break;
-//     }
-// }
+for (var i=100; i>=50; i--) {
+    console.log(i)
+    if (i == 80) {
+        console.log("we got 80.")
+        break;
+    }
+}
 
 
 //find numbers who are even from 35 - 256;
 
-// var start = 98;
-// var end = 345;
+var start = 98;
+var end = 345;
 
-// for (var i = start; i <= end; i++) {
-//     if (i % 2 == 0) {
-//         console.log(`${i} - even number`)
-//     } else {
-//         console.log(`${i} - odd number`)
-//     }
-// }
+for (var i = start; i <= end; i++) {
+    if (i % 2 == 0) {
+        console.log(`${i} - even number`)
+    } else {
+        console.log(`${i} - odd number`)
+    }
+}
 
 
 //          _____ 5 - Q
@@ -44,37 +44,37 @@
 
 // find total count from range 178 - 765, who are odd
 
-// var start = 178;
-// var end = 776;
-// var oddcount = 0;
-// var evencount = 0;
+var start = 178;
+var end = 776;
+var oddcount = 0;
+var evencount = 0;
  
 
-// for (var i = start; i<=end; i++) {
-//     if (i % 2 != 0) {
-//         console.log(i) 
-//         oddcount++;    
-//     } else {
-//         evencount++;
-//     }
-// }
+for (var i = start; i<=end; i++) {
+    if (i % 2 != 0) {
+        console.log(i) 
+        oddcount++;    
+    } else {
+        evencount++;
+    }
+}
 
 
-// console.log(oddcount, "total odd number")
-// console.log(evencount, "total even number")
+console.log(oddcount, "total odd number")
+console.log(evencount, "total even number")
 
 
 // Q. find out addition of first natural numbers who are even....
 
-// var result = 0;
+var result = 0;
 
-// for (var i = 1; i <= 100; i++) {
-//     if (i % 2 == 0) {
-//         result = result + i;
-//     }
-// }
+for (var i = 1; i <= 100; i++) {
+    if (i % 2 == 0) {
+        result = result + i;
+    }
+}
 
-// console.log(result);
+console.log(result);
 
 
 // Q. find the factorial... 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 * 11 * 12 
@@ -99,3 +99,54 @@ for (var i = 1; i <= number; i++) {
     }
 }
 console.log(result)
+
+
+
+for (var i=100; i>=50; i--) {
+    console.log(i)
+}
+
+for (var i=100; i>=50; i--) {
+    console.log(i)
+    if (i == 80) {
+        console.log("we got 80.")
+        break;
+    }
+}
+
+var start = 98;
+var end = 345;
+for (var i = start; i <= end; i++) {
+    if (i % 2 == 0) {
+        console.log(`${i} - even number`)
+    } else {
+        console.log(`${i} - odd number`)
+    }
+}
+
+var start = 178;
+var end = 776;
+var oddcount = 0;
+var evencount = 0;
+for (var i = start; i<=end; i++) {
+    if (i % 2 != 0) {
+        console.log(i) 
+        oddcount++;    
+    } else {
+        evencount++;
+    }
+}
+
+console.log(oddcount, "total odd number")
+console.log(evencount, "total even number")
+
+var result = 0;
+
+for (var i = 1; i <= 100; i++) {
+    if (i % 2 == 0) {
+        result = result + i;
+    }
+}
+
+console.log(result);
+
