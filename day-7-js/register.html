@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form onsubmit="register(event)">
+        <label>Name </label> </br>
+        <input type="text" id="name"/> </br>
+        <label>Email </label> </br>
+        <input type="email" id="email"/> </br>
+        <label>Password </label> </br>
+        <input type="password" id="password"/> </br>
+        <label>Confirm Password </label> </br>
+        <input type="confirm password" id="confirmpassword"/> </br> </br>
+        <input type="submit" value="Register"/> </br>
+    </form>
+
+    <button onclick="getusers()">Get Users</button>
+    <script>
+        function register(event) {
+            event.preventDefault();
+            const userName = document.getElementById("Nmae").value;
+            const userEmail = document.getElementById('Email').value;
+            const userPassword = document.getElementById("password").value;
+            const userConfirmPassword = document.getElementById("confirmpassword").value;
+            console.log(userName, userEmail, userPassword,)
+            if(userName && userEmail && userPassword && userConfirmPassword) {
+                if(userPassword === userConfirmPassword) {
+                    alert("pass and cfmpass does not match")
+                    const userObject = {name : userName, email : userEmail, password : userPassword}
+
+                    var array = JSON.parse(localStorage.getItem("users")) || [];
+                    //console.log(array, "-check here")
+                    array.push[userObject]
+
+                    localStorage.setItem("users", JSON.stringify(array))
+
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("password").value = "";
+                    document.getElementById("confirmpassword").value = "";
+
+                    alert("Register Sucess")
+                
+            } else {
+                alert("pass and cfmpass matched")
+            }
+
+            } else {
+                alert("All feilds are mandatory")
+            }
+        }
+
+        function getusers() {
+            var users = JSON.parse(localStorage.getItem("users"));
+            console.log(users)
+        }
+
+    </script>
+</body>
+</html>

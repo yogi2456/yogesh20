@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="login(event)">
+        <label>Email</label> <br />
+        <input type="email" id="email"/> <br />
+        <label>Password</label> <br />
+        <input type="password" id="password"/> <br />
+        <input type="submit" value="login"/> <br />
+    </form>
+
+    <script>
+        function login(event) {
+            event.preventDefault();
+            const userEmail = document.getElementById("email").value;
+            const userPassword = document.getElementById("password").value;
+            console.log(userEmail, userPassword)
+            if (userEmail && userPassword) {
+
+                const userObject = { email : userEmail, password : userPassword }
+
+                var array = JSON.parse(localStorage.getItem) || [];
+
+                array.push[userObject];
+
+                localStorage.setItem("users", JSON.stringify(array))
+
+                document.getElementById("email").value = "";
+                document.getElementById("password").value = "";
+
+                alert("login success")
+            } else {
+                alert("all fields are mandatory")
+            }
+        }
+    </script>
+</body>
+</html>
