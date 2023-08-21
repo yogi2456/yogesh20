@@ -24,9 +24,9 @@
 
                 const userObject = { email : userEmail, password : userPassword }
 
-                var array = JSON.parse(localStorage.getItem) || [];
+                var array = JSON.parse(localStorage.getItem("users")) || [];
 
-                array.push[userObject];
+                array.push(userObject)
 
                 localStorage.setItem("users", JSON.stringify(array))
 
@@ -41,3 +41,5 @@
     </script>
 </body>
 </html>
+
+

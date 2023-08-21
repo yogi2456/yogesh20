@@ -14,7 +14,7 @@
         <label>Password </label> </br>
         <input type="password" id="password"/> </br>
         <label>Confirm Password </label> </br>
-        <input type="confirm password" id="confirmpassword"/> </br> </br>
+        <input type="password" id="confirmpassword"/> </br> </br>
         <input type="submit" value="Register"/> </br>
     </form>
 
@@ -22,19 +22,19 @@
     <script>
         function register(event) {
             event.preventDefault();
-            const userName = document.getElementById("Nmae").value;
-            const userEmail = document.getElementById('Email').value;
+            const userName = document.getElementById("name").value;
+            const userEmail = document.getElementById('email').value;
             const userPassword = document.getElementById("password").value;
             const userConfirmPassword = document.getElementById("confirmpassword").value;
             console.log(userName, userEmail, userPassword,)
             if(userName && userEmail && userPassword && userConfirmPassword) {
                 if(userPassword === userConfirmPassword) {
-                    alert("pass and cfmpass does not match")
+                    //alert("pass and con pass match")
                     const userObject = {name : userName, email : userEmail, password : userPassword}
 
                     var array = JSON.parse(localStorage.getItem("users")) || [];
                     //console.log(array, "-check here")
-                    array.push[userObject]
+                    array.push(userObject)
 
                     localStorage.setItem("users", JSON.stringify(array))
 
@@ -46,7 +46,7 @@
                     alert("Register Sucess")
                 
             } else {
-                alert("pass and cfmpass matched")
+                alert("pass and confirm  not matched")
             }
 
             } else {
