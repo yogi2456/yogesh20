@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="register(event)">
+        <label>Name </label> <br />
+        <input type="text" id="name"/> <br />
+        <label>Email </label> <br />
+        <input type="email" id="email"/> <br />
+        <label>Password </label> <br />
+        <input type="password" id="password"/> <br />
+        <label>Confirm Password</label> <br />
+        <input type="confirmpassword" id="confirmpassword"/> <br />
+        <input type="submit" value="register"/>
+    </form>
+
+    <script>
+        function register(event) {
+            event.preventDefault();
+            const userName = document.getElementById("name").value;
+            const userEmail = document.getElementById("email").value;
+            const userPassword = document.getElementById("password").value;
+            const userConfirmPassword = document.getElementById("confirmpassword").value;
+            console.log(userName, userEmail, userPassword)
+            if (userName && userEmail && userPassword && userConfirmPassword) {
+                if (userPassword === userConfirmPassword) {
+                    alert("pass and con pass matched")
+
+                    const userObject = { name : userName, email : userEmail, password : userPassword }
+
+                    var array = JSON.parse(localStorage.getItem("users")) || [];
+
+                    array.push(userObject)
+
+                    localStorage.setItem("users", JSON.stringify(array))
+
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("password").value = "";
+                    document.getElementById("confirmpassword").value = "";
+
+                    alert("register success")
+                } else {
+                    alert("pass and con pass not matched")
+                }
+            } else {
+                alert("all fields are mandatory")
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="login(event)">
+        <label>Email </label> <br />
+        <input type="email" id="email"/> <br />
+        <label>Password </label> <br />
+        <input type="password" id="password"/> <br />
+        <input type="submit" value="login"/>
+    </form>
+
+    <script>
+        function login(event) {
+            event.preventDefault();
+            const userEmail = document.getElementById("email").value;
+            const userPassword = document.getElementById("password").value;
+            console.log(userEmail, userPassword)
+            if (userEmail && userPassword) {
+
+                const userObject = { email : userEmail, password : userPassword}
+
+                var array = JSON.parse(localStorage.getItem("users")) || [];
+                array.push(userObject)
+
+                localStorage.setItem("users", JSON.stringify(array))
+
+                document.getElementById("email").value = "";
+                document.getElementById("password").value = "";
+
+
+                alert("login sucess")
+            } else {
+                alert("all fields are mandatory")
+            }
+        }
+    </script>
+</body>
+</html>
