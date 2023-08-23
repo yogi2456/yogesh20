@@ -1,37 +1,90 @@
-var age = 18;
-console.log(age > 18)
+// Data types
 
-if(age > 18) {
-    console.log("you are older than 18")
-} else {
-    console.log("you are smaller than 18")
-}
 
-console.log(25 > 10 && 100 > 50 && 7654 > 3456)
-console.log(35 > 45 || 78 > 54 || 200 > 300)
 
-var age = 18;
-var had = false;
-if(age >=19 && age <=80 && had == false) {
-    console.log(`you are allowed for DL age - ${age}`)
-} else if (age ==18 && !had) {
-    console.log(`you are allow for LL - ${age}`)
-} else {
-    console.log(`you are not allowed for DL. ${age}`)
-}
+// syntax = "", '', ``
+// 1.string :
+// examples :
+// "yogesh", 'karan', `my name is yogesh`, "35", "yogeshsagaluri@gmail.com.."
 
-var age = "yogesh";
-switch (age) {
-    case "yogesh" || "abc":
-        console.log("abc")
-        break;
-    case "xyz":
-        console.log(age)
-        break;
-    default:
-        console.log("not matched")
-}
 
-for (var i=1; i<=100; i=i+1) {
-    console.log(i)
-}
+// 2.number :
+
+// syntax :
+// 34, 5647, -9876, 34.56, 0
+
+
+// 3. boolean :
+
+
+// syntax :
+// true , false
+
+// 4.undefined
+
+// initially no value
+
+
+
+// variables - 
+
+
+// var
+// let
+// const
+
+// var :
+
+// syntax : var nameofvarible = value;
+
+
+var myName = "yogesh";
+var mySurname = "sakluri";
+var myAge = "24";
+var karan = "saturday"
+var yogesh = "True"
+
+console.log(myName)
+console.log(mySurname)
+console.log(myAge)
+console.log(karan)
+console.log(yogesh)
+
+var num1 = 256;
+var num2 = 354;
+var addition = num1 + num2;
+console.log(addition, "-addition")
+var substraction = num1 - (num2 * num1);
+console.log(substraction, "-substraction")
+var multiply = num1 * (num2 + num1);
+console.log(multiply, "-multiply")
+var divide = num1 / num2;
+console.log(divide, "-divide")
+
+var myname = "yogesh";
+console.log(myname, typeof (myname))
+var mysurname = 'sakluri';
+console.log(mysurname, typeof (mysurname))
+var mycity = "mumbai";
+console.log(mycity, typeof (mycity))
+
+
+var myage = 25;
+console.log(myage, typeof (myage))
+
+var yogesh = true;
+console.log(yogesh, typeof (yogesh))
+
+var mouni ;
+console.log(mouni, typeof(mouni))
+
+ 
+
+var myname = "xyz";
+
+var message = "welcome to our website, mr. ${myname}";
+
+var newmessage = `welcome to our website, mr. ${myname}`
+
+console.log(message);
+console.log(newmessage)
