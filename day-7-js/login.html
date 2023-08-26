@@ -26,6 +26,15 @@
 
                 var array = JSON.parse(localStorage.getItem("users")) || [];
 
+                for (var i = 0; i < array.length; i++) {
+                    //console.log(array[i])
+                    if (array[i].email === userEmail) {
+                        return alert("this email is already taken, please use different email")
+                    } if (array[i].password === userPassword) {
+                        return alert("this password is taken, please use different password")
+                    }
+                }
+
                 array.push(userObject)
 
                 localStorage.setItem("users", JSON.stringify(array))
