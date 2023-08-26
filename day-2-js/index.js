@@ -22,8 +22,8 @@ if(age >=19 && age <=80 && had == false) {
 
 var age = "yogesh";
 switch (age) {
-    case "yogesh" || "abc":
-        console.log("abc")
+    case "yogesh":
+        console.log(age)
         break;
     case "xyz":
         console.log(age)

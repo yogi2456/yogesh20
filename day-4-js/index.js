@@ -43,24 +43,24 @@ console.log(myname, "final log")
 
 // Array []
 
-var name = ["yogesh, karan, anuj, rahul"];
+// var name = ["yogesh, karan, anuj, rahul"];
 
-var number = [34,87,90,12,35,54,];
+// var number = [34,87,90,12,35,54,];
 
-var letter = [a,b,c,d,e,f,g,h];
+// var letter = [a,b,c,d,e,f,g,h];
 
-var allDataTypes = [a,b,c,34,56,87,23,"yogesh", name];
+// var allDataTypes = [a,b,c,34,56,87,23,"yogesh", name];
 
 
-var myname = ["yogesh", "karan", "anuj", "rahul", "raj", "ganesh"];
-console.log(myname)
-console.log(myname[0])
-console.log(myname[1])
-console.log(myname[2])
-console.log(myname[3])
-console.log(myname[4])
-console.log(myname[5])
-console.log(myname.length)
+// var myname = ["yogesh", "karan", "anuj", "rahul", "raj", "ganesh"];
+// console.log(myname)
+// console.log(myname[0])
+// console.log(myname[1])
+// console.log(myname[2])
+// console.log(myname[3])
+// console.log(myname[4])
+// console.log(myname[5])
+// console.log(myname.length)
 
 
 //Q find out is "raj" present in given array or not?
@@ -73,7 +73,7 @@ for(var i=0; i<myname.length; i++) {
     if(myname[i] == "raj") {
         console.log("we got raj and value is ->", myname[i], "and index is", i)
         break;
-    }
+    } 
 }
 
 

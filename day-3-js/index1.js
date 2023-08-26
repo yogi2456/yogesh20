@@ -68,7 +68,7 @@ console.log(evencount, "total even number")
 
 var result = 0;
 
-for (var i = 1; i <= 100; i++) {
+for (var i = 1; i <= 5; i++) {
     if (i % 2 == 0) {
         result = result + i;
     }
@@ -79,7 +79,7 @@ console.log(result);
 
 // Q. find the factorial... 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 * 11 * 12 
 
-var number = 3;
+var number = 4;
 var result = 1;
 
 for (var i = 2; i <= number; i++) {
