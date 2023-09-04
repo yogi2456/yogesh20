@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="product(event)">
+        <label>Product Name</label> <br />
+        <input type="text" placeholder="type the product.." id="pname"/> <br />
+        <label>Product Price</label> <br />
+        <input type="number" placeholder="type the product price" id="pprice"/> <br />
+        <label>product Image</label> <br />
+        <input type="text" placeholder="type the url of the image" id="pimage"/> <br />
+        <input type="checkbox" id="mycheck"/>
+        <p>accept all terms and conditions</p>
+        <input type="submit" value="Add the product"/>
+    </form>
+
+    <script>
+        function product(event) {
+            event.preventDefault();
+            var name = document.getElementById("pname").value;
+            var price = document.getElementById("pprice").value;
+            var image = document.getElementById("pimage").value;
+            var checkbox = document.getElementById("mycheck");
+
+            if (name && price && image && checkbox) {
+                var productsarray = JSON.parse(localStorage.getItem("Allproducts"))
+                productsarray.push({ name, price, image })
+                localStorage.setItem("Allproducts", JSON.stringify(productsarray))
+                document.getElementById("pname").value="";
+                document.getElementById("pprice").value="";
+                document.getElementById("pimage").value="";
+                alert("product added succesfully") 
+            }
+            alert("all fields are mandatory")
+        }
+    </script>
+</body>
+</html>
