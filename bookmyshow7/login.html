@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/704533a44e.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #screen {
+            width: 100%;
+            height: 1000px;
+            background-color: white;
+        }
+
+        #get {
+            width: 30%;
+            margin: auto;
+            height: 700px;
+            background-color: white;
+        }
+
+        #start {
+            width: 100%;
+            height: 580px;
+            background-color: white;
+            margin-top: 70px;
+            border: 1px solid red;
+        }
+
+        #start > div:nth-child(1) {
+            display: flex;
+        }
+
+        #start > div:nth-child(1)> p {
+            margin-top: 40px;
+            margin-left: 35%;
+            font-size: 20px;
+        }
+
+        #start > div:nth-child(1)> div {
+            margin-top: 40px;
+            margin-left: 30%
+        }
+
+        #start > div:nth-child(2) {
+            margin-top: 40px;
+        }
+
+        #start > div:nth-child(2) > div:nth-child(1) {
+            width: 80%;
+            margin: auto;
+            height: 40px;
+            border: 1px solid gray;
+            display: flex;
+            align-items: center;
+        }
+
+        #start > div:nth-child(2) > div:nth-child(1) > div {
+            margin-left: 30px;
+        }
+
+        #start > div:nth-child(2) > div:nth-child(1) > p {
+            margin-left: 60px;
+            color: gray;
+            font-size: 18px;
+        }
+
+        #start > div:nth-child(2) > div:nth-child(2) {
+            width: 80%;
+            margin: auto;
+            height: 40px;
+            border: 1px solid gray;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #start > div:nth-child(2) > div:nth-child(2) > div {
+            margin-left: 30px;
+        }
+
+        #start > div:nth-child(2) > div:nth-child(2) > p {
+            margin-left: 60px;
+            color: gray;
+            font-size: 18px;
+        }
+
+        #start > div:nth-child(2) > div:nth-child(3) {
+            width: 80%;
+            margin: auto;
+            height: 40px;
+            border: 1px solid gray;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #start > div:nth-child(2) > div:nth-child(3) > div {
+            margin-left: 30px;
+        }
+
+        #start > div:nth-child(2) > div:nth-child(3) > p {
+            margin-left: 60px;
+            color: gray;
+            font-size: 18px;
+        }
+
+        #start > div:nth-child(2) > div:nth-child(4) {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 30px;
+            color: gray;
+        }
+
+        #start > div:nth-child(3) {
+            width: 80%;
+            margin: auto;
+        }
+
+        #start > div:nth-child(3) > div:nth-child(1) {
+            display: flex;
+            margin-top: 40px;
+        }
+
+        #start > div:nth-child(3) > div:nth-child(1) > p {
+            color: gray;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        #start > div:nth-child(3) > div:nth-child(2) {
+            border: 1px solid gray;
+        }
+
+        #start > div:nth-child(3) > div:nth-child(3) {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        #start > div:nth-child(3) > div:nth-child(3) > p {
+            color: gray;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        #start > div:nth-child(3) > div:nth-child(4) {
+            border: 1px solid gray;
+        }
+
+        #start > div:nth-child(3) > div:nth-child(5) {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        #start > div:nth-child(3) > div:nth-child(5) > p {
+            color: gray;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        #start > div:nth-child(3) > div:nth-child(6) {
+            border: 1px solid gray;
+        }
+
+        #start > div:nth-child(4) {
+            width: 80%;
+            margin: auto;
+        }
+
+        #start > div:nth-child(4) > div:nth-child(1) {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        #start > div:nth-child(4) > div:nth-child(1) > p {
+            margin-left: 10px;
+            font-size: 15px;
+        }
+
+        #start > div:nth-child(4) > div:nth-child(2) {
+            height: 30px;
+            border: 1px solid gray;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="get">
+            <div id="start">
+                <div>
+                    <p>Get Started</p>
+                    <div><i class="fa-solid fa-xmark fa-xl" style="color: #92959b;"></i></div>
+                </div>
+                <div>
+                    <div>
+                        <div><i class="fa-brands fa-google fa-l" style="color: #1357cd;"></i></div>
+                        <p>Continue With Google</p>
+                    </div> 
+                    <div>
+                        <div><i class="fa-regular fa-envelope fa-l" style="color: #8b8c8d;"></i></div>
+                        <p>Continue With Email</p>
+                    </div>
+                    <div>
+                        <div><i class="fa-brands fa-apple fa-l" style="color: #19191a;"></i></div>
+                        <p>Continue With Apple</p>
+                    </div>
+                    <div>
+                        <p>OR</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div><i class="fa-solid fa-user" style="color: #7a7c7f;"></i></div>
+                        <p>UserName</p>
+                    </div>
+                    <div></div>
+                    <div>
+                        <div><i class="fa-regular fa-envelope" style="color: #6e7072;"></i></div>
+                        <p>Email</p>
+                    </div>
+                    <div></div>
+                    <div>
+                        <div><i class="fa-solid fa-lock" style="color: #96989c;"></i></div>
+                        <p>Password</p>
+                    </div>
+                    <div></div>
+                </div>
+                <div>
+                    <div>
+                        <input type="checkbox"/>
+                        <p>i agree to the Terms and Conditions and Privacy Policy.</p>
+                    </div>
+                    <div>Submit</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
