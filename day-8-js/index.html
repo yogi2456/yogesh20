@@ -8,7 +8,7 @@
 <body>
     <form onsubmit="product(event)">
         <label>Product Name</label> <br />
-        <input type="text" placeholder="type the product.." id="pname"/> <br />
+        <input type="text" placeholder="type the product.." id="pname"/> <br /> <br />
         <label>Product Price</label> <br />
         <input type="number" placeholder="type the product price" id="pprice"/> <br />
         <label>product Image</label> <br />
@@ -24,18 +24,19 @@
             var name = document.getElementById("pname").value;
             var price = document.getElementById("pprice").value;
             var image = document.getElementById("pimage").value;
-            var checkbox = document.getElementById("mycheck");
+            var checkbox = document.getElementById("mycheck")
 
             if (name && price && image && checkbox) {
-                var productsarray = JSON.parse(localStorage.getItem("Allproducts"))
+                var productsarray = JSON.parse(localStorage.getItem("Allproducts")) || [];
                 productsarray.push({ name, price, image })
                 localStorage.setItem("Allproducts", JSON.stringify(productsarray))
                 document.getElementById("pname").value="";
                 document.getElementById("pprice").value="";
-                document.getElementById("pimage").value="";
+                document.getElementById("pimage").value=""
                 alert("product added succesfully") 
+            } else {
+                alert("all fields are mandatory")
             }
-            alert("all fields are mandatory")
         }
     </script>
 </body>
