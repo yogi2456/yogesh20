@@ -85,3 +85,11 @@ array4.push("prabhas")
 array4.push("balu")
 
 console.log(array4, "-push")
+
+setTimeout(function () {
+    console.log("logged after 3 sec.")
+}, 5000)
+
+setInterval (function () {
+    console.log("logged in interval after 3 sec.")
+}, 3000)
