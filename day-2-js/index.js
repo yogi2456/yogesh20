@@ -11,8 +11,8 @@ console.log(25 > 10 && 100 > 50 && 7654 > 3456)
 console.log(35 > 45 || 78 > 54 || 200 > 300)
 
 var age = 18;
-var had = false;
-if(age >=19 && age <=80 && had == false) {
+var had = true;
+if(age >=19 && age <=80 && had == true) {
     console.log(`you are allowed for DL age - ${age}`)
 } else if (age ==18 && !had) {
     console.log(`you are allow for LL - ${age}`)

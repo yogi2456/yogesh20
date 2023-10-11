@@ -8,6 +8,7 @@
 //     } else {
 //         console.log(array[i], "This is even number.")
 //     }
+
 // }
 
 // Q Find out all odd numbers and even numbers addition from given array.
