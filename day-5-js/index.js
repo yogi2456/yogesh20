@@ -135,18 +135,18 @@ for (var i = 0; i < array.length; i++) {
 console.log(additionOfOddNumber, "this is odd number")
 console.log(additionOfEvenNumber, "this is even number")
 
-// var array = [2, 3, 6, 5, 8, 3, 4, 9, 10, 14, 7];
-// var target = 12;
-// for (var i = 0; i < array.length; i++) {
-//     //console.log(array[i])
-//     for (var j = 1; j < array.length; j++) {
-//         console.log(i,j)
-//         console.log(array[i], array[j])
-//         console.log(array[i] + array[j])
-//         console.log(array[i] + array[j] == target)
-//         if (array[i] + array[j] == target) {
-//             console.log(array[i], "+", array[j], "=", array[i] + array[j])
-//         }
+var array = [2, 3, 6, 5];
+var target = 12;
+for (var i = 0; i < array.length; i++) {
+    //console.log(array[i])
+    for (var j = 1; j < array.length; j++) {
+        console.log(i,j)
+        //console.log(array[i], array[j])
+        //console.log(array[i] + array[j])
+        //console.log(array[i] + array[j] == target)
+       // if (array[i] + array[j] == target) {
+            //console.log(array[i], "+", array[j], "=", array[i] + array[j])
+        //}
 
-//     }
-// }    
+    }
+}    
