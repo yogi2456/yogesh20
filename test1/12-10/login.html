@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="login(event)">
+        <h1>Login Form</h1> <br />
+        <label>Email</label> <br />
+        <input type="email" id="email"/> <br />
+        <label>Password</label> <br />
+        <input type="password" id="password"/> <br /> <br />
+        <input type="submit" value="login"/> 
+    </form>
+
+    <script>
+        function login(event) {
+            event.preventDefault();
+
+            const userEmail = document.getElementById("email").value;
+            const userPassword = document.getElementById("password").value;
+            console.log(userEmail, userPassword)
+            if(userEmail && userPassword) {
+                if(userPassword.length > 8) {
+
+                    const userObject = { email: userEmail, password: userPassword }
+
+                    var array = JSON.parse(localStorage.getItem("users")) || [];
+
+                    for(var i = 0; i < array.length; i++) {
+                        if(array[i].email === userEmail) {
+                            alert("this email is already taken, please use different email")
+                        } if(array[i].password === userPassword) {
+                            alert("this password is already taken, please use different password")
+                        }
+                    }
+
+                    array.push(userObject)
+
+                    localStorage.setItem("users", JSON.stringify(array))
+
+                    document.getElementById("email").value="";
+                    document.getElementById("password").value="";
+                    // window.location.href = "./index.html"
+
+                    alert("login successful")
+                } else {
+                    alert("password should be 8 digits")
+                }        
+
+            } else {
+                alert("all fields are mandatory")
+            }
+        }
+
+    </script>
+</body>
+</html>
