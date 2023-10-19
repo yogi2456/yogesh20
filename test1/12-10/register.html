@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>register Form</h1>
+    <form onsubmit="register(event)">
+        <label>Name:</label> <br />
+        <input type="text" id="name"/> <br />
+        <label>Email:</label> <br />
+        <input type="email" id="email"/> <br />
+        <label>Password:</label> <br />
+        <input type="password" id="password"/> <br />
+        <label>Confirm Password:</label> <br />
+        <input type="password" id="confirmpassword"/> <br /> <br />
+        <input type="submit" value="Register"/> <br />
+    </form>
+
+    <script>
+        function register(event) {
+            event.preventDefault();
+
+            const userName = document.getElementById("name").value;
+            const userEmail = document.getElementById("email").value;
+            const userPassword = document.getElementById("password").value;
+            const userConfirmPassword = document.getElementById("confirmpassword").value;
+            console.log(userName, userEmail, userPassword)
+            if(userName && userEmail && userPassword && userConfirmPassword) {
+                if(userPassword === userConfirmPassword) {
+                    if(userPassword && userConfirmPassword.length >= 8) {
+
+                        const userObject = { name: userName, email: userEmail, password: userPassword};
+
+                        var array = JSON.parse(localStorage.getItem("users")) || [];
+
+                        for(var i = 0; i < array.length; i++) {
+                            if(array[i].email === userEmail) {
+                                alert(" this email already taken, please use different email ")
+                            } if(array[i].password === userPassword) {
+                                alert("this password is already taken, please use different password")
+                            }
+                        }
+
+                        array.push(userObject)
+
+                        localStorage.setItem("users", JSON.stringify(array))
+
+                        document.getElementById("name").value="";
+                        document.getElementById("email").value="";
+                        document.getElementById("password").value="";
+                        document.getElementById("confirmpassword").value="";
+                        // window.location.href = "./index.html"
+
+                        alert("register success")
+
+                    } else {
+                        alert("password should be 8 digits")
+                    }
+
+                } else {
+                    alert("pass and confirmpass not matched")
+                }
+
+            } else {
+                alert("All fields are mandatory")
+            }
+
+
+        }
+    </script>
+</body>
+</html>
