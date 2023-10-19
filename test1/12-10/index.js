@@ -310,17 +310,18 @@
 
 // console.log(palindrome(string))
 
-L1 = [1, 2, 4];
-L2 = [1, 3, 4];
-var result = [];
+List1 = [];
+List2 = [0];
+var mergedList = [];
 
-function sortedList(L1, L2) {
-    for(i = 0; i <= L1, L2.length - 1; i++) {
-        console.log(L1[i], L2[i]) 
-            if(L1[i], L2[i] == 0) {
-                result.push(L1[i])
-            }
+function sortedList(List1, List2) {
+    for(i = 0; i < List1.length; i++) {
+        mergedList.push(List1[i]);
     }
+    for(j = 0; j < List2.length; j++) {
+        mergedList.push(List2[j])
+    }
+    return mergedList;
 }
 
-console.log(sortedList(L1, L2))
+console.log(sortedList(List1, List2));
