@@ -294,3 +294,30 @@
 //     console.log("GFG".length)
 // }
 // func();
+
+// string =121;
+
+
+// function palindrome(string) {
+// for(var i = 0; i > string.length/2; i++) {
+//      console.log(string[i])
+//      if(string[i] !== string(string.length -1 -i)) {
+//         return false;
+//      }
+// }
+// return true;
+// }
+
+// console.log(palindrome(string))
+
+L1 = [1, 2, 4];
+L2 = [1, 3, 4];
+
+function sortedList(L1, L2) {
+    for(i = 0; i <= L1, L2.length - 1; i++) {
+        console.log(L1[i], L2[i])
+       if() 
+    }
+}
+
+console.log(sortedList(L1, L2))
