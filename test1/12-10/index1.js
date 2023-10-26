@@ -1,7 +1,7 @@
 //merge two sorted list?
 
-// List1 = [];
-// List2 = [0];
+// List1 = [1, 2, 4];
+// List2 = [1, 3, 4];
 // var mergedList = [];
 
 // function sortedList(List1, List2) {
@@ -18,20 +18,20 @@
 
 //palindrome?
 
-// string =121;
+string =123;
 
 
-// function palindrome(string) {
-// for(var i = 0; i > string.length/2; i++) {
-//      console.log(string[i])
-//      if(string[i] !== string(string.length -1 -i)) {
-//         return false;
-//      }
-// }
-// return true;
-// }
+function palindrome(string) {
+for(var i = 0; i > string.length/2; i++) {
+     console.log(string[i])
+     if(string[i] !== string(string.length -1 -i)) {
+        return false;
+     }
+}
+return true;
+}
 
-// console.log(palindrome(string))
+console.log(palindrome(string))
 
 //missing number?
 
@@ -120,28 +120,28 @@
 // let input = "()";
 // console.log(isValid(input)); // Expected output: true
 
-let input = "{}";
+// let input = "{}";
 
-function isValid(s) {
-    const stack = [];
-    const mappings = {
-        ')' : '(',
-        ']' : '[',
-        '}' : '{'
-    };
+// function isValid(s) {
+//     const stack = [];
+//     const mappings = {
+//         ')' : '(',
+//         ']' : '[',
+//         '}' : '{'
+//     };
 
-    for(let i = 0; i < s.length; i++) {
-        const char = s[i];
-        if(mappings[char]) {
-            const topElement = stack.pop();
-            if(mappings[char] !== topElement) {
-                return false;
-            }
-        } else {
-            stack.push(char)
-        }
-    }
-    return stack.length === 0;
-}
+//     for(let i = 0; i < s.length; i++) {
+//         const char = s[i];
+//         if(mappings[char]) {
+//             const topElement = stack.pop();
+//             if(mappings[char] !== topElement) {
+//                 return false;
+//             }
+//         } else {
+//             stack.push(char)
+//         }
+//     }
+//     return stack.length === 0;
+// }
 
-console.log(isValid(input))
+// console.log(isValid(input))
